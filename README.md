@@ -8,7 +8,7 @@ Alexa Bot built from Scratch
 
 # Packages
 1. pip install pyttsx3
-2. pip install speech-recognition
+2. pip install speechrecognition
 3. pip install wikipedia
 4. pip install pyjokes
 
