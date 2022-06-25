@@ -8,7 +8,7 @@ import datetime
 import os
 
 
-engine = pyttsx3.init('nsss')
+engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
@@ -47,10 +47,6 @@ while True:
         time = datetime.datetime.now().strftime('%I:%M %p')
         speak("It's {time} master")
     
-    ### celebrity
-    elif 'who is' in query:
-        query = query.replace('who is',"")
-        speak(wikipedia.summary(query,2))
     
     ### Joke
     elif 'joke' in query:
