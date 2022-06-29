@@ -45,7 +45,7 @@ while True:
     ### time
     elif 'time' in query:
         time = datetime.datetime.now().strftime('%I:%M %p')
-        speak("It's {time} master")
+        speak("It's " +str(time)+" master")
     
     
     ### Joke
