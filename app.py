@@ -74,16 +74,6 @@ while True:
                     pass
             trndnews() 
 
-
-    ### music
-    elif 'music' in query:
-        music_dir = 'E:\\music'
-        songs = os.listdir(music_dir)
-        song = random.randint(0,len(songs)-1)
-        print(songs[song])  
-        speak(f"playing{songs[song]}")
-        os.startfile(os.path.join(music_dir, songs[0]))
-
     elif "bye" in query:
         speak("Have a nice day ! ")
         break
